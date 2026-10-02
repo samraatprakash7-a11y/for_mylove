@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sourav ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, #591c34, #1b0a12 50%, #080509);
+  color: white;
+  font-family: Georgia, serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 18px;
+}
+
+.screen {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  animation: fade .7s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 18px 0;
+}
+
+p {
+  color: #f5dfe7;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.tiny {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #d995a9;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 28px;
+  margin: 10px 5px;
+  background: white;
+  color: #4b1428;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0,0,0,.35);
+  transition: .25s;
+}
+
+button:hover {
+  transform: scale(1.07);
+}
+
+.heart {
+  font-size: 75px;
+  animation: pulse 1.3s infinite;
+}
+
+.letter {
+  text-align: left;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 22px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.letter p {
+  font-size: 16px;
+}
+
+.special {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.big-heart {
+  font-size: 90px;
+  animation: pulse 1.2s infinite;
+}
+
+.love {
+  font-size: 38px;
+}
+
+.hug {
+  font-size: 65px;
+  margin: 10px;
+}
+
+.kisses {
+  font-size: 22px;
+  color: white;
+}
+
+.forever {
+  color: white;
+  margin-top: 30px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .love {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="screen active" id="screen1">
+  <div class="heart">❤️</div>
+  <p class="tiny">for my birthday boy</p>
+
+  <h1>If I were with you right now… 🥹</h1>
+
+  <p>
+    I'd give you the biggest hug first. 🫂<br>
+    Then I'd kiss your forehead.<br>
+    Then your cheeks.<br>
+    Then I'd probably keep kissing you
+    until you told me to stop. 😂💋
+  </p>
+
+  <p>
+    And honestly…<br>
+    I probably wouldn't listen. 😌❤️
+  </p>
+
+  <p>
+    But since I can't be there right now,<br>
+    I made this little birthday surprise for you…
+  </p>
+
+  <p>
+    <b>So birthday boy,<br>
+    let me spoil you from a distance. ❤️</b>
+  </p>
+
+  <button onclick="nextScreen(2)">Come with me 💌</button>
+</section>
+
+
+<section class="screen" id="screen2">
+  <div class="heart">🥹</div>
+
+  <h1>Are you ready?</h1>
+
+  <p>For your little birthday surprise? ❤️</p>
+
+  <button onclick="nextScreen(3)">YES ❤️</button>
+  <button onclick="nextScreen(3)">Obviously 😌</button>
+</section>
+
+
+<section class="screen" id="screen3">
+  <div class="heart">😌❤️</div>
+
+  <h1>One important question...</h1>
+
+  <p>
+    Do you think your girlfriend<br>
+    is going to annoy you today? 😂
+  </p>
+
+  <button onclick="nextScreen(4)">Obviously 😂</button>
+  <button onclick="nextScreen(4)">Nope 😇</button>
+</section>
+
+
+<section class="screen" id="screen4">
+  <div class="heart">😂❤️</div>
+
+  <h1>Correct answer.</h1>
+
+  <p>You're officially stuck with me now. 😌❤️</p>
+
+  <p>
+    No returns.<br>
+    No refunds.<br>
+    No escape. 😂
+  </p>
+
+  <button onclick="nextScreen(5)">
+    Okay, girlfriend... 🥹
+  </button>
+</section>
+
+
+<section class="screen letter-screen" id="screen5">
+
+  <h1>Happy Birthday, Sourav ❤️</h1>
+
+  <div class="letter">
+
+    <p>
+      I don't think I'll ever have the perfect words to explain what you mean to me,
+      but I hope you know that you're genuinely so special to me.
+    </p>
+
+    <p>
+      May God bless you abundantly, guide you in every decision you make,
+      protect you wherever you go, and give you strength for everything that comes your way.
+      May He bless your work, your dreams, your family, and your heart.
+    </p>
+
+    <p>
+      I pray this year brings you closer to everything God has planned for you,
+      fills your life with peace, happiness and purpose,
+      and gives you countless reasons to smile.
+    </p>
+
+    <p>
+      May you always stay blessed, protected and surrounded by love.
+    </p>
+
+    <p><b>Happy Birthday, my love. ❤️</b></p>
+
+  </div>
+
+  <button onclick="nextScreen(6)">
+    There's more… 🥹
+  </button>
+</section>
+
+
+<section class="screen" id="screen6">
+
+  <div class="heart">🫂</div>
+
+  <h1>I wish I could meet you today. 🥹</h1>
+
+  <p>
+    I wish I could celebrate your birthday with you,
+    see that smile in front of me,
+    give you the biggest hug
+    and annoy you all day.
+  </p>
+
+  <p>
+    I'd steal your attention,
+    steal your hugs
+    and give you way too many kisses. 😂💋
+  </p>
+
+  <p class="special">
+    Distance is the only thing I'd change about today. ❤️
+  </p>
+
+  <button onclick="nextScreen(7)">
+    One last thing… 👀
+  </button>
+</section>
+
+
+<section class="screen final" id="screen7">
+
+  <div class="big-heart">❤️</div>
+
+  <h1>And after all these words…</h1>
+
+  <p>there's really only one thing left to say.</p>
+
+  <h1 class="love">I LOVE YOU, SOURAV. ❤️</h1>
+
+  <p>Happy Birthday, my love.</p>
+
+  <p>
+    Happy Birthday to the boy who has become
+    such a beautiful part of my life.
+  </p>
+
+  <div class="hug">🫂</div>
+
+  <p>
+    Now come here…<br>
+    I have a birthday hug waiting for you. 🫂
+  </p>
+
+  <p class="kisses">
+    And a LOT of kisses. 💋💋💋
+  </p>
+
+  <p class="forever">
+    Happy Birthday, birthday boy. 🥹❤️
+  </p>
+
+</section>
+
+</div>
+
+<script>
+function nextScreen(number) {
+
+  document.querySelectorAll(".screen").forEach(function(screen) {
+    screen.classList.remove("active");
+  });
+
+  document
+    .getElementById("screen" + number)
+    .classList.add("active");
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
